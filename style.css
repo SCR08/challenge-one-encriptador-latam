@@ -1,0 +1,12 @@
+*{
+    background: #F3F5FC;
+}
+#output1{
+    display: flexbox;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background-color: #FFFFFF;    
+}

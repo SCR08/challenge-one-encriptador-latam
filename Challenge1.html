@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF+8">
+        <meta name="tittle" content="Encriptador Programa ONE">
+        <meta name="Description" content="Encriptador del primer desafio de el programa ONE">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">    
+    </head>
+    <body>
+        <script src="challenge.js"></script>
+        <header>
+        </header>
+        <main>
+            <input type="text" id=etext name=etext placeholder="Ingrese el texto aqui" required> 
+            <p class="output1" id="output1"></p>  
+            <script>
+                const encriptartx = document.getElementById("etext")
+                const encriptbt = document.getElementById("encriptbt1")
+                const out1 = document.getElementById("output1")
+
+                function encriptar(){
+                    out1.innerHTML=encriptartx.value;
+                }
+                encriptbt.addEventListener('click', encriptar);
+            </script>      
+        </main>
+        <footer>
+         <button type="button" id="encriptbt1" onclick="encriptar()">Encriptar</button> <button type="button" id="desencriptbt">Desencriptar</button>
+        </footer>
+    </body>
+</html>
